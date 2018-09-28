@@ -1,0 +1,42 @@
+<notices>
+    <notice>
+        <name>RxJava 2</name>
+        <url>http://groups.google.com/d/forum/rxjava</url>
+        <copyright>Copyright (c) 2016-present, RxJava Contributors.</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Dagger 2</name>
+        <url>http://google.github.io/dagger</url>
+        <copyright>Copyright 2012 The Dagger Authors</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Glide</name>
+        <url>https://bumptech.github.io/glide/</url>
+        <copyright>Sam Judd - @sjudd on GitHub, @samajudd on Twitter</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Retrofit</name>
+        <url>http://square.github.io/retrofit/</url>
+        <copyright>Copyright 2013 Square, Inc.</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Licenses Dialog</name>
+        <url>http://psdev.de/LicensesDialog</url>
+        <copyright>Copyright 2013-2017 Philip Schiffer</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>RxAndroid</name>
+        <url>https://github.com/ReactiveX/RxAndroid</url>
+        <copyright>Copyright 2015 The RxAndroid authors</copyright>
+        <license>Apache Software License 2.0</license>
+    </notice>
+    <notice>
+        <name>Yandex MapKit</name>
+        <url>https://tech.yandex.ru/maps/mapkit/</url>
+    </notice>
+</notices>

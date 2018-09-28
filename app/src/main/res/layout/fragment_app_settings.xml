@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/baseBackgroundColor">
+
+        <!--<FrameLayout-->
+            <!--android:id="@+id/framelayout_appsettings_maptype"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_marginEnd="16dp"-->
+            <!--android:layout_marginStart="16dp"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:background="@drawable/all_background_rectange"-->
+            <!--android:elevation="2dp"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/textview_appsettings_maptype"-->
+                <!--style="@style/TextStyle.Settings"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="top|start"-->
+                <!--android:layout_margin="@dimen/app_margin"-->
+                <!--android:text="@string/map_type"-->
+                <!--android:textColor="@color/red"-->
+                <!--android:textStyle="bold" />-->
+
+            <!--<info.hoang8f.android.segmented.SegmentedGroup xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"-->
+                <!--android:id="@+id/rg_appsettings_maptypes"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_margin="16dp"-->
+                <!--android:gravity="bottom"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:weightSum="3"-->
+                <!--segmentedgroup:sc_border_width="1dp"-->
+                <!--segmentedgroup:sc_checked_text_color="@color/white"-->
+                <!--segmentedgroup:sc_corner_radius="2dp"-->
+                <!--segmentedgroup:sc_tint_color="@color/red">-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/btn_schema"-->
+                    <!--style="@style/RadioButton"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="@string/schema" />-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/btn_atlas"-->
+                    <!--style="@style/RadioButton"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="@string/atlas" />-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/btn_hybrid"-->
+                    <!--style="@style/RadioButton"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="@string/hybrid" />-->
+
+            <!--</info.hoang8f.android.segmented.SegmentedGroup>-->
+
+        <!--</FrameLayout>-->
+
+        <TextView
+            android:id="@+id/textview_appsettings_contact_us"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/app_margin"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/contact_us"
+            android:textColor="@color/greySettingsTitle"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearlayout_appsettings_other" />
+
+        <TextView
+            android:id="@+id/textview_appsettings_support"
+            style="@style/TextStyle.Settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/app_margin"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/all_background_rectange"
+            android:elevation="2dp"
+            android:padding="@dimen/app_margin"
+            android:text="@string/help_support"
+            android:textAlignment="center"
+            android:textColor="@color/greySettingsItem"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_appsettings_contact_us" />
+
+        <LinearLayout
+            android:id="@+id/linearlayout_appsettings_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/app_margin"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/all_background_rectange"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textview_appsettings_system"
+                style="@style/TextStyle.Settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/app_margin"
+                android:text="@string/system"
+                android:textColor="@color/red"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textview_appsettings_clear_map_cache"
+                style="@style/TextStyle.Settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/app_margin_medium"
+                android:layout_marginEnd="@dimen/app_margin"
+                android:layout_marginStart="@dimen/app_margin"
+                android:layout_marginTop="@dimen/app_margin_medium"
+                android:foreground="?selectableItemBackground"
+                android:text="@string/clear_map_cache"
+                android:textColor="@color/greySettingsItem"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textview_appsettings_clearimagecache"
+                style="@style/TextStyle.Settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/app_margin"
+                android:layout_marginEnd="@dimen/app_margin"
+                android:layout_marginStart="@dimen/app_margin"
+                android:layout_marginTop="@dimen/app_margin_medium"
+                android:foreground="?selectableItemBackground"
+                android:text="@string/clear_image_cache"
+                android:textColor="@color/greySettingsItem"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textview_appsettings_cleardata"
+                style="@style/TextStyle.Settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/app_margin_medium"
+                android:layout_marginEnd="@dimen/app_margin"
+                android:layout_marginStart="@dimen/app_margin"
+                android:foreground="?selectableItemBackground"
+                android:text="@string/clear_data"
+                android:textColor="@color/greySettingsItem"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearlayout_appsettings_legal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/all_background_rectange"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_appsettings_support">
+
+            <TextView
+                android:id="@+id/textview_appsettings_legal"
+                style="@style/TextStyle.Settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/app_margin"
+                android:text="@string/legal"
+                android:textColor="@color/red"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textview_appsettings_liceses"
+                style="@style/TextStyle.Settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/app_margin_medium"
+                android:layout_marginEnd="@dimen/app_margin"
+                android:layout_marginStart="@dimen/app_margin"
+                android:layout_marginTop="@dimen/app_margin_medium"
+                android:text="@string/licenses"
+                android:foreground="?selectableItemBackground"
+                android:textColor="@color/greySettingsItem"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textview_appsettings_privacy_policy"
+                style="@style/TextStyle.Settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/app_margin_medium"
+                android:layout_marginEnd="@dimen/app_margin"
+                android:layout_marginStart="@dimen/app_margin"
+                android:layout_marginTop="@dimen/app_margin_medium"
+                android:foreground="?selectableItemBackground"
+                android:text="@string/privacy_policy"
+                android:textColor="@color/greySettingsItem"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textview_appsettings_mapkit_terms_of_use"
+                style="@style/TextStyle.Settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/app_margin_medium"
+                android:layout_marginEnd="@dimen/app_margin"
+                android:layout_marginStart="@dimen/app_margin"
+                android:layout_marginTop="@dimen/app_margin_medium"
+                android:foreground="?selectableItemBackground"
+                android:text="@string/mapkit_terms_of_use"
+                android:textColor="@color/greySettingsItem"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textview_appsettings_license_agreement"
+                style="@style/TextStyle.Settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/app_margin"
+                android:layout_marginEnd="@dimen/app_margin"
+                android:layout_marginStart="@dimen/app_margin"
+                android:layout_marginTop="@dimen/app_margin_medium"
+                android:foreground="?selectableItemBackground"
+                android:text="@string/license"
+                android:textColor="@color/greySettingsItem"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageview_fragmentsettings_applogo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:elevation="4dp"
+            android:src="@drawable/app_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearlayout_appsettings_legal" />
+
+        <TextView
+            android:id="@+id/textview_appsettings_app_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/app_version"
+            style="@style/TextStyle.Settings"
+            android:textColor="@color/greySettingsItem"
+            android:textAlignment="center"
+            android:layout_margin="@dimen/app_margin"
+            app:layout_constraintTop_toBottomOf="@id/imageview_fragmentsettings_applogo" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

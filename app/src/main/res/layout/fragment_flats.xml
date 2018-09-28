@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baseBackgroundColor"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <FrameLayout
+        android:id="@+id/container_fragmentflats_pb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:clipToPadding="false"
+        android:elevation="8dp"
+        android:paddingBottom="96dp"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressbar_fragmentflats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textview_fragmentflats_error"
+        style="@style/TextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/app_margin"
+        android:paddingBottom="@dimen/app_bar_height"
+        android:visibility="gone"
+        android:text="@string/empty_response"
+        android:textAlignment="center"
+        android:textColor="@color/greySettingsTitle" />
+
+    <com.lounah.yarealty.presentation.views.cardstackview.CardStackView
+        android:id="@+id/cardview_flats"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:clipToPadding="false"
+        android:elevation="8dp"
+        android:paddingBottom="96dp"
+        app:elevationEnabled="false"
+        app:scaleDiff="0.02"
+        app:stackFrom="top"
+        app:swipeDirection="horizontal"
+        app:swipeEnabled="true"
+        app:swipeThreshold="0.5"
+        app:translationDiff="12"
+        app:visibleCount="2" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/button_flats_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:transitionName="@string/fab_back_transition"
+        android:layout_alignTop="@+id/button_flats_dislike"
+        android:layout_toStartOf="@id/button_flats_dislike"
+        android:src="@drawable/ic_back"
+        app:backgroundTint="@color/white"
+        app:elevation="4dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/button_flats_dislike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:transitionName="@string/fab_dislike_transition"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="24dp"
+        android:src="@drawable/ic_cross"
+        app:backgroundTint="@color/white"
+        app:elevation="4dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/button_flats_addtofavs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:transitionName="@string/fab_like_transition"
+        android:layout_alignTop="@+id/button_flats_back"
+        android:layout_toEndOf="@id/button_flats_dislike"
+        android:src="@drawable/ic_fav"
+        app:backgroundTint="@color/white"
+        app:elevation="4dp" />
+</RelativeLayout>

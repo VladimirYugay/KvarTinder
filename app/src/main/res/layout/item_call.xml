@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_item_call"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/textview_callhistoryitem_date"
+        style="@style/TextStyle.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/baseBackgroundColor"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:textAlignment="center"
+        android:paddingStart="@dimen/app_margin"
+        android:textStyle="bold"
+        android:textColor="@color/greyDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.lounah.yarealty.presentation.views.circleimageview.CircleImageView
+        android:id="@+id/imageview_callhistoryitem_offer"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_callhistoryitem_date" />
+
+    <TextView
+        android:id="@+id/textview_callhistoryitem_phoneNumber"
+        style="@style/TextStyle.Small"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/imageview_callhistoryitem_offer"
+        app:layout_constraintTop_toTopOf="@+id/imageview_callhistoryitem_offer" />
+
+    <TextView
+        android:id="@+id/textview_callhistoryitem_info"
+        style="@style/TextStyle.Small.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageview_callhistoryitem_offer"
+        app:layout_constraintStart_toEndOf="@+id/imageview_callhistoryitem_offer"
+        app:layout_constraintTop_toBottomOf="@+id/textview_callhistoryitem_phoneNumber" />
+
+    <TextView
+        android:id="@+id/textview_callhistoryitem_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textview_callhistoryitem_phoneNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_callhistoryitem_date"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>

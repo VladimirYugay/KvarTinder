@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/app_margin_medium"
+    android:layout_marginTop="@dimen/app_margin_medium"
+    android:background="@drawable/all_background_rectange"
+    android:elevation="1dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switch_agency_no_commission"
+        style="@style/TextStyle.Settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/app_margin"
+        android:text="@string/no_agency_commission"
+        android:textColor="@color/greySettingsTitle" />
+
+    <TextView
+        style="@style/TextStyle.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/app_margin"
+        android:layout_marginStart="@dimen/app_margin"
+        android:text="@string/agency_commission_description"
+        android:textColor="@color/grey" />
+
+
+</LinearLayout>

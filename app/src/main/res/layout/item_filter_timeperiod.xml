@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout_filters_timeperiod"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/all_background_rectange"
+    android:elevation="1dp"
+    android:orientation="vertical">
+
+    <info.hoang8f.android.segmented.SegmentedGroup xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rg_searchfilters_renttime"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/all_background_rectange"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        segmentedgroup:sc_border_width="0dp"
+        segmentedgroup:sc_checked_text_color="@color/white"
+        segmentedgroup:sc_corner_radius="@dimen/card_corner"
+        segmentedgroup:sc_tint_color="@color/red">
+
+        <RadioButton
+            android:id="@+id/btn_longtime"
+            style="@style/RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/long_time" />
+
+        <RadioButton
+            android:id="@+id/btn_perday"
+            style="@style/RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/per_day" />
+
+    </info.hoang8f.android.segmented.SegmentedGroup>
+
+</LinearLayout>

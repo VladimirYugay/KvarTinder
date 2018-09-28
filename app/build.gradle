@@ -1,0 +1,179 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'jacoco'
+apply from: "$project.rootDir/secretconfig.gradle"
+
+android {
+    compileSdkVersion build_versions.target_sdk
+    defaultConfig {
+        applicationId "com.lounah.yarealty"
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
+        versionCode 1
+        versionName "1.0.0 от " + getDate()
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField("String", "DB_NAME", "\"yarealty.db\"")
+        buildConfigField("String", "BASE_URL", "\"https://api.realty.yandex.net/1.0/\"")
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+    }
+
+    signingConfigs {
+        config {
+            keyAlias signConfigs.keyAlias
+            keyPassword signConfigs.keyPassword
+            storeFile file(signConfigs.storeFile)
+            storePassword signConfigs.storePassword
+        }
+    }
+
+    buildTypes {
+        release {
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            multiDexEnabled true
+            minifyEnabled false
+            testCoverageEnabled true
+        }
+        applicationVariants.all { variant ->
+            variant.buildConfigField "String", "REALTY_API_KEY", "\""+apiKeys.realtyApiKey+"\""
+            variant.buildConfigField "String", "MAPKIT_API_KEY", "\""+apiKeys.mapKitKey+"\""
+            variant.buildConfigField "String", "YANDEX_METRIKA_API_KEY", "\""+apiKeys.yandexMetrikaKey+"\""
+        }
+    }
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+            returnDefaultValues = true
+        }
+    }
+    androidExtensions {
+        experimental = true
+    }
+
+    splits {
+        abi {
+            enable true
+            reset()
+            include "x86", "armeabi-v7a"
+            universalApk true
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+jacoco {
+    toolVersion = "0.7.4+"
+}
+
+dependencies {
+    // Base
+    implementation deps.kotlin.stdlib
+    implementation deps.support.app_compat
+    implementation deps.support.support
+    implementation deps.support.design
+    implementation deps.support.constraint
+    implementation deps.support.recycler
+    implementation deps.support.card_view
+
+    implementation deps.licenses_dialog
+    implementation deps.mapKit
+    implementation deps.appmetrika
+    implementation deps.install_referrer
+    implementation deps.deeplinks
+    kapt deps.deeplinksProcessor
+
+    // VM
+    implementation deps.arch.view_model
+    implementation deps.arch.lifecycle_extension
+
+    // Room
+    implementation deps.room.runtime
+    implementation deps.room.rxjava
+    kapt deps.room.compiler
+
+    // Retrofit
+    implementation deps.retrofit.runtime
+    implementation deps.retrofit.rxadapter
+    implementation deps.retrofit.factory
+
+    // RxJava
+    implementation deps.rx.rxjava
+    implementation deps.rx.rxandroid
+
+    // Dagger
+    implementation deps.dagger.runtime
+    implementation deps.dagger.support
+    kapt deps.dagger.processor
+    kapt deps.dagger.compiler
+
+    // UI
+    implementation deps.ui.tinderCards
+    implementation deps.ui.segmentedButton
+    implementation deps.ui.delegateAdapters
+
+    // Testing
+    testImplementation deps.tests.junit
+    testImplementation deps.tests.hamcrest
+    testImplementation deps.tests.mockito
+    testImplementation deps.tests.robolectric
+    testImplementation deps.arch_core.testing
+
+    androidTestImplementation deps.tests.espressoContrib
+    androidTestImplementation deps.tests.androidTestRules
+    androidTestImplementation deps.tests.espressoCore
+    androidTestImplementation deps.atsl.runner
+
+    //Glide
+    implementation deps.glide
+    kapt deps.glide_compiler
+}
+
+task fullCoverageReport(type: JacocoReport) {
+    dependsOn 'createDebugCoverageReport'
+    dependsOn 'testDebugUnitTest'
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+
+    def fileFilter = ['**/R.class', '**/R$*.class', '**/BuildConfig.*', '**/Manifest*.*',
+                      '**/*Test*.*', 'android/**/*.*',
+                      '**/*_MembersInjector.class',
+                      '**/Dagger*Component.class',
+                      '**/Dagger*Component$Builder.class',
+                      '**/*_*Factory.class',
+                      '**/*ComponentImpl.class',
+                      '**/*SubComponentBuilder.class']
+    def debugTree = fileTree(dir: "${buildDir}/intermediates/classes/debug", excludes: fileFilter)
+    def mainSrc = "${project.projectDir}/src/main/java"
+
+    sourceDirectories = files([mainSrc])
+    classDirectories = files([debugTree])
+    executionData = fileTree(dir: "$buildDir", includes: [
+            "jacoco/testDebugUnitTest.exec",
+            "outputs/code-coverage/connected/*coverage.ec"
+    ])
+}
+
+project.tasks.whenTaskAdded {
+    if (it.name == "testReleaseUnitTest") {
+        it.enabled = false
+    }
+}
+
+static def getDate() {
+    return new Date().format('yyyy/MM/dd')
+}

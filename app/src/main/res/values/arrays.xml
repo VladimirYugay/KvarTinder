@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Search filters screen -->
+    <string-array name="stringarr_searchfilters_buyrent">
+        <item name="rent">@string/buy</item>
+        <item name="room">@string/rent</item>
+    </string-array>
+
+    <string-array name="stringarr_searchfilters_type">
+        <item name="apartment">@string/apartment</item>
+        <item name="room">@string/room</item>
+        <item name="house">@string/house</item>
+        <item name="plot">@string/plot</item>
+    </string-array>
+
+</resources>

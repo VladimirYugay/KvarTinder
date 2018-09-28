@@ -1,0 +1,291 @@
+{
+  "response": {
+    "offerId": "5004872943638045567",
+    "offerType": "SELL",
+    "offerCategory": "APARTMENT",
+    "author": {
+      "id": "13448779",
+      "organization": "ГК «А101»",
+      "phones": [
+        "+74957654286"
+      ],
+      "name": "ГК «А101»"
+    },
+    "creationDate": "2018-06-01T23:25:31Z",
+    "updateDate": "2018-08-13T23:09:22Z",
+    "roomsTotal": 2,
+    "floorsTotal": 9,
+    "floorsOffered": [
+      2
+    ],
+    "flatType": "NEW_FLAT",
+    "apartmentNumber": "227",
+    "ceilingHeight": 2.85,
+    "area": {
+      "value": 41.9,
+      "unit": "SQUARE_METER"
+    },
+    "price": {
+      "currency": "RUR",
+      "value": 4418271,
+      "period": "WHOLE_LIFE",
+      "unit": "WHOLE_OFFER",
+      "trend": "UNCHANGED",
+      "valuePerPart": 105448,
+      "unitPerPart": "SQUARE_METER",
+      "valueForWhole": 4418271,
+      "unitForWhole": "WHOLE_OFFER"
+    },
+    "totalImages": 12,
+    "minicardImages": [
+      "//avatars.mds.yandex.net/get-realty/1245834/offer.5004872943638045567.7748036237621765957/minicard",
+      "//avatars.mds.yandex.net/get-realty/909350/offer.5004872943604680667.2904883814492549743/minicard",
+      "//avatars.mds.yandex.net/get-realty/941841/offer.5004872943610135367.2425051915311495577/minicard",
+      "//avatars.mds.yandex.net/get-realty/1245186/offer.5004872943604681630.2005804036886915297/minicard",
+      "//avatars.mds.yandex.net/get-realty/223159/offer.5004872943604682713.3526399700168042677/minicard",
+      "//avatars.mds.yandex.net/get-realty/214165/offer.5004872943604680696.8110404513903621864/minicard",
+      "//avatars.mds.yandex.net/get-realty/1219161/offer.5004872943635063672.8969695347046200397/minicard",
+      "//avatars.mds.yandex.net/get-realty/1219161/offer.5004872943610156504.436523765401569153/minicard",
+      "//avatars.mds.yandex.net/get-realty/965271/offer.5004872943610157372.4045101526260444146/minicard",
+      "//avatars.mds.yandex.net/get-realty/1337539/offer.5004872943663783102.5115673369040968167/minicard",
+      "//avatars.mds.yandex.net/get-realty/941841/offer.5004872943610134346.8116228529019573160/minicard",
+      "//avatars.mds.yandex.net/get-realty/895985/offer.5004872943610134342.5744379445777987178/minicard"
+    ],
+    "mainImages": [
+      "//avatars.mds.yandex.net/get-realty/1245834/offer.5004872943638045567.7748036237621765957/main",
+      "//avatars.mds.yandex.net/get-realty/909350/offer.5004872943604680667.2904883814492549743/main",
+      "//avatars.mds.yandex.net/get-realty/941841/offer.5004872943610135367.2425051915311495577/main",
+      "//avatars.mds.yandex.net/get-realty/1245186/offer.5004872943604681630.2005804036886915297/main",
+      "//avatars.mds.yandex.net/get-realty/223159/offer.5004872943604682713.3526399700168042677/main",
+      "//avatars.mds.yandex.net/get-realty/214165/offer.5004872943604680696.8110404513903621864/main",
+      "//avatars.mds.yandex.net/get-realty/1219161/offer.5004872943635063672.8969695347046200397/main",
+      "//avatars.mds.yandex.net/get-realty/1219161/offer.5004872943610156504.436523765401569153/main",
+      "//avatars.mds.yandex.net/get-realty/965271/offer.5004872943610157372.4045101526260444146/main",
+      "//avatars.mds.yandex.net/get-realty/1337539/offer.5004872943663783102.5115673369040968167/main",
+      "//avatars.mds.yandex.net/get-realty/941841/offer.5004872943610134346.8116228529019573160/main",
+      "//avatars.mds.yandex.net/get-realty/895985/offer.5004872943610134342.5744379445777987178/main"
+    ],
+    "fullImages": [
+      "//avatars.mds.yandex.net/get-realty/1245834/offer.5004872943638045567.7748036237621765957/large",
+      "//avatars.mds.yandex.net/get-realty/909350/offer.5004872943604680667.2904883814492549743/large",
+      "//avatars.mds.yandex.net/get-realty/941841/offer.5004872943610135367.2425051915311495577/large",
+      "//avatars.mds.yandex.net/get-realty/1245186/offer.5004872943604681630.2005804036886915297/large",
+      "//avatars.mds.yandex.net/get-realty/223159/offer.5004872943604682713.3526399700168042677/large",
+      "//avatars.mds.yandex.net/get-realty/214165/offer.5004872943604680696.8110404513903621864/large",
+      "//avatars.mds.yandex.net/get-realty/1219161/offer.5004872943635063672.8969695347046200397/large",
+      "//avatars.mds.yandex.net/get-realty/1219161/offer.5004872943610156504.436523765401569153/large",
+      "//avatars.mds.yandex.net/get-realty/965271/offer.5004872943610157372.4045101526260444146/large",
+      "//avatars.mds.yandex.net/get-realty/1337539/offer.5004872943663783102.5115673369040968167/large",
+      "//avatars.mds.yandex.net/get-realty/941841/offer.5004872943610134346.8116228529019573160/large",
+      "//avatars.mds.yandex.net/get-realty/895985/offer.5004872943610134342.5744379445777987178/large"
+    ],
+    "alikeImages": [
+      "//avatars.mds.yandex.net/get-realty/1245834/offer.5004872943638045567.7748036237621765957/alike",
+      "//avatars.mds.yandex.net/get-realty/909350/offer.5004872943604680667.2904883814492549743/alike",
+      "//avatars.mds.yandex.net/get-realty/941841/offer.5004872943610135367.2425051915311495577/alike",
+      "//avatars.mds.yandex.net/get-realty/1245186/offer.5004872943604681630.2005804036886915297/alike",
+      "//avatars.mds.yandex.net/get-realty/223159/offer.5004872943604682713.3526399700168042677/alike",
+      "//avatars.mds.yandex.net/get-realty/214165/offer.5004872943604680696.8110404513903621864/alike",
+      "//avatars.mds.yandex.net/get-realty/1219161/offer.5004872943635063672.8969695347046200397/alike",
+      "//avatars.mds.yandex.net/get-realty/1219161/offer.5004872943610156504.436523765401569153/alike",
+      "//avatars.mds.yandex.net/get-realty/965271/offer.5004872943610157372.4045101526260444146/alike",
+      "//avatars.mds.yandex.net/get-realty/1337539/offer.5004872943663783102.5115673369040968167/alike",
+      "//avatars.mds.yandex.net/get-realty/941841/offer.5004872943610134346.8116228529019573160/alike",
+      "//avatars.mds.yandex.net/get-realty/895985/offer.5004872943610134342.5744379445777987178/alike"
+    ],
+    "cosmicImages": [
+      "//avatars.mds.yandex.net/get-realty/1245834/offer.5004872943638045567.7748036237621765957/cosmic",
+      "//avatars.mds.yandex.net/get-realty/909350/offer.5004872943604680667.2904883814492549743/cosmic",
+      "//avatars.mds.yandex.net/get-realty/941841/offer.5004872943610135367.2425051915311495577/cosmic",
+      "//avatars.mds.yandex.net/get-realty/1245186/offer.5004872943604681630.2005804036886915297/cosmic",
+      "//avatars.mds.yandex.net/get-realty/223159/offer.5004872943604682713.3526399700168042677/cosmic",
+      "//avatars.mds.yandex.net/get-realty/214165/offer.5004872943604680696.8110404513903621864/cosmic",
+      "//avatars.mds.yandex.net/get-realty/1219161/offer.5004872943635063672.8969695347046200397/cosmic",
+      "//avatars.mds.yandex.net/get-realty/1219161/offer.5004872943610156504.436523765401569153/cosmic",
+      "//avatars.mds.yandex.net/get-realty/965271/offer.5004872943610157372.4045101526260444146/cosmic",
+      "//avatars.mds.yandex.net/get-realty/1337539/offer.5004872943663783102.5115673369040968167/cosmic",
+      "//avatars.mds.yandex.net/get-realty/941841/offer.5004872943610134346.8116228529019573160/cosmic",
+      "//avatars.mds.yandex.net/get-realty/895985/offer.5004872943610134342.5744379445777987178/cosmic"
+    ],
+    "appMiddleImages": [
+      "//avatars.mds.yandex.net/get-realty/1245834/offer.5004872943638045567.7748036237621765957/app_middle",
+      "//avatars.mds.yandex.net/get-realty/909350/offer.5004872943604680667.2904883814492549743/app_middle",
+      "//avatars.mds.yandex.net/get-realty/941841/offer.5004872943610135367.2425051915311495577/app_middle",
+      "//avatars.mds.yandex.net/get-realty/1245186/offer.5004872943604681630.2005804036886915297/app_middle",
+      "//avatars.mds.yandex.net/get-realty/223159/offer.5004872943604682713.3526399700168042677/app_middle",
+      "//avatars.mds.yandex.net/get-realty/214165/offer.5004872943604680696.8110404513903621864/app_middle",
+      "//avatars.mds.yandex.net/get-realty/1219161/offer.5004872943635063672.8969695347046200397/app_middle",
+      "//avatars.mds.yandex.net/get-realty/1219161/offer.5004872943610156504.436523765401569153/app_middle",
+      "//avatars.mds.yandex.net/get-realty/965271/offer.5004872943610157372.4045101526260444146/app_middle",
+      "//avatars.mds.yandex.net/get-realty/1337539/offer.5004872943663783102.5115673369040968167/app_middle",
+      "//avatars.mds.yandex.net/get-realty/941841/offer.5004872943610134346.8116228529019573160/app_middle",
+      "//avatars.mds.yandex.net/get-realty/895985/offer.5004872943610134342.5744379445777987178/app_middle"
+    ],
+    "appLargeImages": [
+      "//avatars.mds.yandex.net/get-realty/1245834/offer.5004872943638045567.7748036237621765957/app_large",
+      "//avatars.mds.yandex.net/get-realty/909350/offer.5004872943604680667.2904883814492549743/app_large",
+      "//avatars.mds.yandex.net/get-realty/941841/offer.5004872943610135367.2425051915311495577/app_large",
+      "//avatars.mds.yandex.net/get-realty/1245186/offer.5004872943604681630.2005804036886915297/app_large",
+      "//avatars.mds.yandex.net/get-realty/223159/offer.5004872943604682713.3526399700168042677/app_large",
+      "//avatars.mds.yandex.net/get-realty/214165/offer.5004872943604680696.8110404513903621864/app_large",
+      "//avatars.mds.yandex.net/get-realty/1219161/offer.5004872943635063672.8969695347046200397/app_large",
+      "//avatars.mds.yandex.net/get-realty/1219161/offer.5004872943610156504.436523765401569153/app_large",
+      "//avatars.mds.yandex.net/get-realty/965271/offer.5004872943610157372.4045101526260444146/app_large",
+      "//avatars.mds.yandex.net/get-realty/1337539/offer.5004872943663783102.5115673369040968167/app_large",
+      "//avatars.mds.yandex.net/get-realty/941841/offer.5004872943610134346.8116228529019573160/app_large",
+      "//avatars.mds.yandex.net/get-realty/895985/offer.5004872943610134342.5744379445777987178/app_large"
+    ],
+    "appMiniSnippetImages": [
+      "//avatars.mds.yandex.net/get-realty/1245834/offer.5004872943638045567.7748036237621765957/app_snippet_mini",
+      "//avatars.mds.yandex.net/get-realty/909350/offer.5004872943604680667.2904883814492549743/app_snippet_mini",
+      "//avatars.mds.yandex.net/get-realty/941841/offer.5004872943610135367.2425051915311495577/app_snippet_mini",
+      "//avatars.mds.yandex.net/get-realty/1245186/offer.5004872943604681630.2005804036886915297/app_snippet_mini",
+      "//avatars.mds.yandex.net/get-realty/223159/offer.5004872943604682713.3526399700168042677/app_snippet_mini",
+      "//avatars.mds.yandex.net/get-realty/214165/offer.5004872943604680696.8110404513903621864/app_snippet_mini",
+      "//avatars.mds.yandex.net/get-realty/1219161/offer.5004872943635063672.8969695347046200397/app_snippet_mini",
+      "//avatars.mds.yandex.net/get-realty/1219161/offer.5004872943610156504.436523765401569153/app_snippet_mini",
+      "//avatars.mds.yandex.net/get-realty/965271/offer.5004872943610157372.4045101526260444146/app_snippet_mini",
+      "//avatars.mds.yandex.net/get-realty/1337539/offer.5004872943663783102.5115673369040968167/app_snippet_mini",
+      "//avatars.mds.yandex.net/get-realty/941841/offer.5004872943610134346.8116228529019573160/app_snippet_mini",
+      "//avatars.mds.yandex.net/get-realty/895985/offer.5004872943610134342.5744379445777987178/app_snippet_mini"
+    ],
+    "appSmallSnippetImages": [
+      "//avatars.mds.yandex.net/get-realty/1245834/offer.5004872943638045567.7748036237621765957/app_snippet_small",
+      "//avatars.mds.yandex.net/get-realty/909350/offer.5004872943604680667.2904883814492549743/app_snippet_small",
+      "//avatars.mds.yandex.net/get-realty/941841/offer.5004872943610135367.2425051915311495577/app_snippet_small",
+      "//avatars.mds.yandex.net/get-realty/1245186/offer.5004872943604681630.2005804036886915297/app_snippet_small",
+      "//avatars.mds.yandex.net/get-realty/223159/offer.5004872943604682713.3526399700168042677/app_snippet_small",
+      "//avatars.mds.yandex.net/get-realty/214165/offer.5004872943604680696.8110404513903621864/app_snippet_small",
+      "//avatars.mds.yandex.net/get-realty/1219161/offer.5004872943635063672.8969695347046200397/app_snippet_small",
+      "//avatars.mds.yandex.net/get-realty/1219161/offer.5004872943610156504.436523765401569153/app_snippet_small",
+      "//avatars.mds.yandex.net/get-realty/965271/offer.5004872943610157372.4045101526260444146/app_snippet_small",
+      "//avatars.mds.yandex.net/get-realty/1337539/offer.5004872943663783102.5115673369040968167/app_snippet_small",
+      "//avatars.mds.yandex.net/get-realty/941841/offer.5004872943610134346.8116228529019573160/app_snippet_small",
+      "//avatars.mds.yandex.net/get-realty/895985/offer.5004872943610134342.5744379445777987178/app_snippet_small"
+    ],
+    "appMiddleSnippetImages": [
+      "//avatars.mds.yandex.net/get-realty/1245834/offer.5004872943638045567.7748036237621765957/app_snippet_middle",
+      "//avatars.mds.yandex.net/get-realty/909350/offer.5004872943604680667.2904883814492549743/app_snippet_middle",
+      "//avatars.mds.yandex.net/get-realty/941841/offer.5004872943610135367.2425051915311495577/app_snippet_middle",
+      "//avatars.mds.yandex.net/get-realty/1245186/offer.5004872943604681630.2005804036886915297/app_snippet_middle",
+      "//avatars.mds.yandex.net/get-realty/223159/offer.5004872943604682713.3526399700168042677/app_snippet_middle",
+      "//avatars.mds.yandex.net/get-realty/214165/offer.5004872943604680696.8110404513903621864/app_snippet_middle",
+      "//avatars.mds.yandex.net/get-realty/1219161/offer.5004872943635063672.8969695347046200397/app_snippet_middle",
+      "//avatars.mds.yandex.net/get-realty/1219161/offer.5004872943610156504.436523765401569153/app_snippet_middle",
+      "//avatars.mds.yandex.net/get-realty/965271/offer.5004872943610157372.4045101526260444146/app_snippet_middle",
+      "//avatars.mds.yandex.net/get-realty/1337539/offer.5004872943663783102.5115673369040968167/app_snippet_middle",
+      "//avatars.mds.yandex.net/get-realty/941841/offer.5004872943610134346.8116228529019573160/app_snippet_middle",
+      "//avatars.mds.yandex.net/get-realty/895985/offer.5004872943610134342.5744379445777987178/app_snippet_middle"
+    ],
+    "appLargeSnippetImages": [
+      "//avatars.mds.yandex.net/get-realty/1245834/offer.5004872943638045567.7748036237621765957/app_snippet_large",
+      "//avatars.mds.yandex.net/get-realty/909350/offer.5004872943604680667.2904883814492549743/app_snippet_large",
+      "//avatars.mds.yandex.net/get-realty/941841/offer.5004872943610135367.2425051915311495577/app_snippet_large",
+      "//avatars.mds.yandex.net/get-realty/1245186/offer.5004872943604681630.2005804036886915297/app_snippet_large",
+      "//avatars.mds.yandex.net/get-realty/223159/offer.5004872943604682713.3526399700168042677/app_snippet_large",
+      "//avatars.mds.yandex.net/get-realty/214165/offer.5004872943604680696.8110404513903621864/app_snippet_large",
+      "//avatars.mds.yandex.net/get-realty/1219161/offer.5004872943635063672.8969695347046200397/app_snippet_large",
+      "//avatars.mds.yandex.net/get-realty/1219161/offer.5004872943610156504.436523765401569153/app_snippet_large",
+      "//avatars.mds.yandex.net/get-realty/965271/offer.5004872943610157372.4045101526260444146/app_snippet_large",
+      "//avatars.mds.yandex.net/get-realty/1337539/offer.5004872943663783102.5115673369040968167/app_snippet_large",
+      "//avatars.mds.yandex.net/get-realty/941841/offer.5004872943610134346.8116228529019573160/app_snippet_large",
+      "//avatars.mds.yandex.net/get-realty/895985/offer.5004872943610134342.5744379445777987178/app_snippet_large"
+    ],
+    "apartment": {},
+    "location": {
+      "rgid": 227296,
+      "geoId": 114619,
+      "subjectFederationId": 1,
+      "settlementRgid": 94,
+      "settlementGeoId": 213,
+      "address": "Москва, поселение Сосенское, 2, пос. Сосенское",
+      "geocoderAddress": "Россия, Москва, поселение Сосенское, 2",
+      "point": {
+        "latitude": 55.591286,
+        "longitude": 37.453568,
+        "precision": "EXACT"
+      },
+      "metro": {
+        "metroGeoId": 20440,
+        "name": "Тёплый Стан",
+        "metroTransport": "ON_TRANSPORT",
+        "timeToMetro": 48,
+        "latitude": 55.618732,
+        "longitude": 37.505917,
+        "minTimeToMetro": 48,
+        "rgbColor": "ff7f00"
+      },
+      "highway": {
+        "name": "Калужское шоссе",
+        "distanceKm": 4.667
+      },
+      "station": {
+        "name": "Новопеределкино",
+        "distanceKm": 5.8102894
+      },
+      "streetAddress": "Жилой район «Испанские кварталы», корп. 3.2"
+    },
+    "house": {
+      "housePart": false
+    },
+    "building": {
+      "builtYear": 2020,
+      "builtQuarter": 1,
+      "buildingState": "UNFINISHED",
+      "buildingType": "MONOLIT",
+      "improvements": {
+        "LIFT": true
+      },
+      "siteId": 129699,
+      "siteName": "Испанские кварталы А101",
+      "siteDisplayName": "Жилой район «Испанские кварталы А101»",
+      "heatingType": "UNKNOWN",
+      "buildingImprovementsMap": {
+        "LIFT": true
+      }
+    },
+    "description": "Продается двухкомнатная квартира в новостройке Жилой район «Испанские кварталы» по адресу Москва, Новомосковский АО, Сосенское С/П, Жилой район «Испанские кварталы», корп. 3.2 Общая площадь квартиры - 41.90 кв. м., этаж 2 из 9. Тип проекта, по которому построен дом - монолит , компания-застройщик - ГК «А101». Стоимость квартиры - 4418271 Р. Срок сдачи - 1 квартал 2020. Более подробная информация по телефону.",
+    "relevance": 1177597.6,
+    "commissioningDateIndexValue": 20201,
+    "extImages": {
+      "IMAGE_PLAN": {
+        "totalImages": 1,
+        "minicardImages": [
+          "//avatars.mds.yandex.net/get-realty/1245834/offer.5004872943638045567.7748036237621765957/minicard"
+        ],
+        "mainImages": [
+          "//avatars.mds.yandex.net/get-realty/1245834/offer.5004872943638045567.7748036237621765957/main"
+        ],
+        "fullImages": [
+          "//avatars.mds.yandex.net/get-realty/1245834/offer.5004872943638045567.7748036237621765957/large"
+        ],
+        "alikeImages": [
+          "//avatars.mds.yandex.net/get-realty/1245834/offer.5004872943638045567.7748036237621765957/alike"
+        ],
+        "cosmicImages": [
+          "//avatars.mds.yandex.net/get-realty/1245834/offer.5004872943638045567.7748036237621765957/cosmic"
+        ],
+        "appMiddleImages": [
+          "//avatars.mds.yandex.net/get-realty/1245834/offer.5004872943638045567.7748036237621765957/app_middle"
+        ],
+        "appLargeImages": [
+          "//avatars.mds.yandex.net/get-realty/1245834/offer.5004872943638045567.7748036237621765957/app_large"
+        ],
+        "appMiniSnippetImages": [
+          "//avatars.mds.yandex.net/get-realty/1245834/offer.5004872943638045567.7748036237621765957/app_snippet_mini"
+        ],
+        "appSmallSnippetImages": [
+          "//avatars.mds.yandex.net/get-realty/1245834/offer.5004872943638045567.7748036237621765957/app_snippet_small"
+        ],
+        "appMiddleSnippetImages": [
+          "//avatars.mds.yandex.net/get-realty/1245834/offer.5004872943638045567.7748036237621765957/app_snippet_middle"
+        ],
+        "appLargeSnippetImages": [
+          "//avatars.mds.yandex.net/get-realty/1245834/offer.5004872943638045567.7748036237621765957/app_snippet_large"
+        ]
+      }
+    },
+    "shareURL": "https://realty.yandex.ru/offer/5004872943638045567/",
+    "views": 184
+  }
+}

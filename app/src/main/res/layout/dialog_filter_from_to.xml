@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView_dialogfilter_title"
+        style="@style/TextStyle.Large"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/til_dialogfilter_from"
+        style="@style/TextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:drawableEnd="@drawable/ic_clear_18dp"
+        android:drawablePadding="@dimen/app_margin"
+        android:gravity="end"
+        android:hint="@string/square_metre"
+        android:inputType="number"
+        android:paddingBottom="24dp"
+        android:singleLine="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_dialogfilter_title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textview_dialogfilter_from"
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/from"
+        app:layout_constraintBottom_toBottomOf="@+id/til_dialogfilter_from"
+        app:layout_constraintStart_toStartOf="@+id/til_dialogfilter_from"
+        app:layout_constraintTop_toTopOf="@+id/til_dialogfilter_from" />
+
+
+    <EditText
+        android:id="@+id/til_dialogfilter_to"
+        style="@style/TextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:drawableEnd="@drawable/ic_clear_18dp"
+        android:drawablePadding="@dimen/app_margin"
+        android:gravity="end"
+        android:hint="@string/square_metre"
+        android:inputType="number"
+        android:paddingBottom="24dp"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_dialogfilter_from" />
+
+    <TextView
+        android:id="@+id/textview_dialogfilter_to"
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/to"
+        app:layout_constraintBottom_toBottomOf="@+id/til_dialogfilter_to"
+        app:layout_constraintStart_toStartOf="@+id/til_dialogfilter_to"
+        app:layout_constraintTop_toTopOf="@+id/til_dialogfilter_to" />
+
+    <!--<android.support.design.widget.TextInputLayout-->
+    <!--android:id="@+id/til_dialogfilter_from"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:layout_marginStart="16dp"-->
+    <!--android:layout_marginTop="16dp"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/textView_dialogfilter_title">-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/editText_dialogfilter_from"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textDirection="rtl"-->
+    <!--android:hint="@string/from"-->
+    <!--android:inputType="number"-->
+    <!--android:singleLine="true" />-->
+    <!--</android.support.design.widget.TextInputLayout>-->
+
+    <!--<android.support.design.widget.TextInputLayout-->
+    <!--android:id="@+id/til_dialogfilter_to"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:layout_marginStart="16dp"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/til_dialogfilter_from">-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/editText_dialogfilter_to"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textDirection="rtl"-->
+    <!--android:hint="@string/to"-->
+    <!--android:inputType="number" />-->
+    <!--</android.support.design.widget.TextInputLayout>-->
+
+    <Button
+        android:id="@+id/button_dialogfilter_ok"
+        style="@android:style/Widget.Material.Light.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/ok"
+        android:textColor="@color/red"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_dialogfilter_to" />
+
+    <Button
+        android:id="@+id/button_dialogfilter_cancel"
+        style="@android:style/Widget.Material.Light.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/cancel"
+        android:textColor="@color/red"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/button_dialogfilter_ok"
+        app:layout_constraintEnd_toStartOf="@id/button_dialogfilter_ok"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_dialogfilter_to"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

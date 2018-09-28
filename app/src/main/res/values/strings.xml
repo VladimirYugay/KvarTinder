@@ -1,0 +1,183 @@
+<resources>
+
+    <!-- App -->
+    <string name="app_name">Квартиндер</string>
+    <string name="app_deeplink">www.yarealty.ru</string>
+    <string name="app_version">Версия %s</string>
+    <string name="build_code">Сборка %s</string>
+    <string name="mobile_argeement_link">https://m.legal.yandex.ru/realty_mobile_agreement/</string>
+    <string name="privacy_policy_link">https://yandex.ru/legal/confidential/?lang=en</string>
+    <string name="mapkit_terms_of_use_link">https://yandex.ru/legal/maps_termsofuse/</string>
+    <string name="support_email">lounah@yandex.ru</string>
+    <string name="default_report_text">Я самый классный</string>
+    <string name="cancel">Отмена</string>
+    <string name="ok">Ок</string>
+    <string name="share_with">Поделиться с…</string>
+
+    <!-- Transition -->
+    <string name="main_image_transition">main_image_transition</string>
+    <string name="page_indicator_transition">page_indicator_transition</string>
+    <string name="price_transition">price_transition</string>
+    <string name="fab_back_transition">fab_back_transition</string>
+    <string name="fab_like_transition">fab_like_transition</string>
+    <string name="fab_dislike_transition">fab_dislike_transition</string>
+
+    <!-- Stub -->
+    <string name="stub_address">Краснодар, ул.Сосновая 97/1</string>
+    <string name="stub_price">9,500,000 ₽</string>
+    <string name="stub_rooms">3к.</string>
+    <string name="call">Позвонить</string>
+    <string name="stub_area">78м,</string>
+    <string name="stub_floor">этаж 7/25</string>
+    <string name="rubble_sign">₽</string>
+    <string name="stub_city">Москва</string>
+
+    <!-- Flats Screen -->
+    <string name="empty_response">Нет подходящих объявлений</string>
+
+    <!-- Flat Details Screen -->
+    <string name="views">Просмотры</string>
+    <string name="price_per_part">Цена за все</string>
+    <string name="price_per_part_unit">Цена за квадратный метр</string>
+    <string name="ceiling_height">Высота потолков</string>
+    <string name="site_display_name">Застройщик</string>
+    <string name="built_quarter">Квартал постройки</string>
+    <string name="built_year">Год постройки</string>
+    <string name="metro">Метро</string>
+    <string name="time_to_metro">Время до метро</string>
+    <string name="share_URL">Ссылка на объявление</string>
+    <string name="report">Пожаловаться на объявление</string>
+
+    <!-- Settings Screen -->
+    <string name="search_filters">Параметры поиска</string>
+    <string name="settings">Настройки</string>
+
+    <!-- Favs Screen -->
+    <string name="favourites">Избранное</string>
+    <string name="my_offers">Мои объявления</string>
+    <string name="empty_favs_list">Тут пусто</string>
+    
+    <!-- Search Filters Screen -->
+    <string name="buy">Купить</string>
+    <string name="rent">Снять</string>
+    <string name="room">Комнату</string>
+    <string name="apartment">Квартиру</string>
+    <string name="house">Дом</string>
+    <string name="plot">Участок</string>
+    <string name="price">Цена</string>
+    <string name="all">Все</string>
+    <string name="new_building">Новостройка</string>
+    <string name="studio">Студия</string>
+    <string name="secondary">Вторичка</string>
+    <string name="per_day">Посуточно</string>
+    <string name="long_time">Длительно</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four_plus">4+</string>
+    <string name="price_min">Цена, от</string>
+    <string name="price_max">Цена, до</string>
+    <string name="unimportantly">Неважно</string>
+    <string name="from">от</string>
+    <string name="to">до</string>
+    <string name="search_near">Искать рядом</string>
+    <string name="square_metre">м²</string>
+    <string name="weave">соток</string>
+    <string name="meter">м</string>
+
+    <string name="price_is_too_high">Максимально допустимое значение - 1 миллиард</string>
+    <string name="price_just_from">от %s</string>
+    <string name="price_just_to">до %s</string>
+
+
+    <!-- Room Info -->
+    <string name="room_area">Площадь комнаты</string>
+    <string name="kitchen">Кухня</string>
+    <string name="rooms_total">Общее число комнат в квартире</string>
+    <string name="kitchen_area">Площадь кухни</string>
+    <string name="bathroom_area">Площадь санузла</string>
+
+
+    <!-- Floor Info -->
+    <string name="floor">Этаж</string>
+    <string name="floor_at_least">Этажей в доме не менее</string>
+    <string name="exclude_first">Кроме первого</string>
+    <style name="last_floor">Последний этаж</style>
+
+    <!-- Agency Commission Item -->
+    <string name="no_agency_commission">Без комиссии агенту</string>
+    <string name="agency_commission_description">Объявления от собственников и от агентов, работающих без комиссии</string>
+
+    <!-- Only from owners Item -->
+    <string name="only_from_owners">Только от собственников</string>
+
+    <!-- Room facilities Item -->
+    <string name="fridge">Холодильник</string>
+    <string name="dishwasher">Посудомоечная машина</string>
+    <string name="air_conditioning">Кондиционер</string>
+    <string name="washer">Стиральная машина</string>
+    <string name="furniture">Наличие мебели</string>
+    <string name="with_pets">Можно с животными</string>
+    <string name="with_kids">Можно с детьми</string>
+
+    <!-- Building Info Item -->
+    <string name="build_year">Год постройки</string>
+    <string name="building_type">Тип дома</string>
+
+    <!-- Area Kitchen Item -->
+    <string name="total_area">Общая площадь</string>
+
+    <!-- Only with photo and from owners -->
+    <string name="only_with_photo">Только с фото</string>
+
+    <!-- House Info Item -->
+    <string name="house_area">Площадь дома</string>
+    <string name="region">Участок</string>
+
+    <!-- ihc Item -->
+    <string name="ihc">ИЖС</string>
+    <string name="hnp">СНТ</string>
+
+    <string name="bathroom">Санузел</string>
+    <string name="free_layout">Свободная планировка</string>
+
+    <!-- App Settings Screen -->
+    <string name="map_type">Тип карты</string>
+    <string name="schema">Схема</string>
+    <string name="atlas">Спутник</string>
+    <string name="hybrid">Гибрид</string>
+    <string name="system">Системное</string>
+    <string name="legal">Права</string>
+    <string name="licenses">Лицензии</string>
+    <string name="contact_us">Свяжитесь с нами</string>
+    <string name="help_support">Помощь и поддержка</string>
+    <string name="terms_of_service">Условия использования</string>
+    <string name="other">Дополнительно</string>
+    <string name="clear_map_cache">Очистить кеш карт</string>
+    <string name="clear_image_cache">Очистить кеш изображений</string>
+    <string name="clear_data">Сброс данных</string>
+    <string name="feedback">Обратная связь</string>
+    <string name="about">О приложении</string>
+    <string name="cleared">Очищено</string>
+    <string name="clearing">Очищается</string>
+
+
+    <!-- About Screen -->
+    <string name="other_yandex_applications">Другие приложения Яндекса</string>
+    <string name="license">Лицензионное соглашение</string>
+    <string name="privacy_policy">Политика конфиденциальности</string>
+
+    <string name="conditions">Условия</string>
+    <string name="description">Описание</string>
+    <string name="stub_description">Продается квартира в новом жилом комплексе \"Геометрия\" на востоке Москвы. Монолитный дом бизнес-класса возводится по индивидуальному проекту. Дом выделяется нестандартной архитектурной композицией и оригинальными входными группами. Подвесной вентилируемый фасад из объемной керамики, витражное остекление и бесшумные лифты OTIS безусловно оценят будущие жильцы. Все квартиры с функциональными планировками и высокими потолками, имеют центральную приточную вентиляцию с механическим побуждением и двойную фильтрацию входящего воздуха. На первом этаже предусмотрен собственный детский сад. Жилой комплекс имеет две наземные секции - 21 этаж каждая и двухуровневый подземный паркинг на 231 машиноместо. Территория комплекса огорожена и охраняется. Для жильцов у дома будет организован уютный благоустроенный двор с клумбами, цветниками, детской и спортивной площадками. Новостройка удобно расположена относительно крупных магистралей - рядом шоссе Энтузиастов и ТТК, метро Авиамоторная всего в 10-15 минутах, метро Римская и Площадь Ильича - в 20 минутах. Район развитый и имеет всю инфраструктуру: магазины шаговой доступности, детские сады, школы, поликлиники, в непосредственной близости расположен крупный ТЦ \"Город\". Сдача дома планируется уже в 3 квартале 2018 года. Продажи ведутся по 214-ФЗ от генерального подрядчика и инвестора объекта ООО «Флэт и Ко». Квартиру также можно приобрести в ипотеку от ведущих банков.</string>
+    <string name="stub_company_name">Компания \"Градомиръ\"</string>
+    <string name="stub_agent_position">Агент, Компания \"Градомиръ\"</string>
+    <string name="stub_business_info">3 комнаты, 72 кв.м, 1 этаж</string>
+    <string name="parameters">Параметры</string>
+    <string name="successfully_deleted">Успешно удалено!</string>
+    <string name="successfully">Успешно</string>
+    <string name="error">Произошла ошибка</string>
+    <string name="mapkit_terms_of_use">Условия использования Яндекс.Карт</string>
+    <string name="call_history">История звонков</string>
+    <string name="shared_offers">Предложения по недвижимости</string>
+</resources>

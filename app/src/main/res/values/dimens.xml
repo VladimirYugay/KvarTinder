@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App -->
+    <dimen name="app_margin">16dp</dimen>
+    <dimen name="app_margin_medium">8dp</dimen>
+    <dimen name="app_bar_height">56dp</dimen>
+
+    <!-- Item realty -->
+    <dimen name="height_item_realty_tablayout">15dp</dimen>
+    <dimen name="card_corner">6dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+
+    <!-- Item fav -->
+    <dimen name="standard_margin_start_end_bottom_item_fav">16dp</dimen>
+    <dimen name="standard_margin_top_item_fav">2dp</dimen>
+    <dimen name="textsize_item_fav_price">20sp</dimen>
+    <dimen name="textsize_item_fav_button">12sp</dimen>
+    <dimen name="textsize_item_fav_description">14sp</dimen>
+
+    <!-- Custom page indicator -->
+    <dimen name="default_line_indicator_line_width">12dp</dimen>
+    <dimen name="default_line_indicator_gap_width">4dp</dimen>
+    <dimen name="default_line_indicator_stroke_width">1dp</dimen>
+    <color name="default_line_indicator_selected_color">#FF33B5E5</color>
+    <color name="default_line_indicator_unselected_color">#FFBBBBBB</color>
+    <bool name="default_line_indicator_centered">true</bool>
+
+    <!-- Flat Zoomed Activity -->
+    <dimen name="headline_text_size_flatzoomed">26sp</dimen>
+    <dimen name="subheadline_text_size_flatzoomed">18sp</dimen>
+    <dimen name="description_text_size_flatzoomed">16sp</dimen>
+    <dimen name="margin_start_end_bottom_flatzoomed">16dp</dimen>
+    <dimen name="margin_top_flatzoomed">0dp</dimen>
+</resources>

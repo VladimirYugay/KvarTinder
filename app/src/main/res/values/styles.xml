@@ -1,0 +1,45 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="coordinatorLayoutStyle">@style/Widget.Support.CoordinatorLayout</item>
+    </style>
+
+    <style name="TextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/proxima_nova</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MaterialButton">
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:colorButtonNormal">@android:color/white</item>
+    </style>
+
+
+    <style name="TextStyle.Small">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextStyle.Settings">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/greySettingsItem</item>
+    </style>
+
+    <style name="TextStyle.Small.Light">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="TextStyle.Large">
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="TextStyle.CardPrice">
+        <item name="android:textSize">54sp</item>
+    </style>
+
+</resources>

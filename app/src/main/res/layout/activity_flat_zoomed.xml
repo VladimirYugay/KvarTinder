@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_flatzoomed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_flatzoomed"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingtoolbar_flatzoomed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager_flatzoomed_images"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:fitsSystemWindows="true"
+                app:layout_collapseMode="pin" />
+
+            <com.lounah.yarealty.presentation.views.pageindicator.SwipableLinePageIndicator
+                android:id="@+id/tabindicator_flatzoomed"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_item_realty_tablayout"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:foreground="@drawable/all_background_gradient"
+                android:transitionName="@string/page_indicator_transition"
+                app:gapWidth="@dimen/app_margin_medium"
+                app:selectedColor="@color/white"
+                app:strokeWidth="3dp"
+                app:unselectedColor="@color/greySemiTransparent" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <FrameLayout
+        android:id="@+id/container_fragmentflatdetails_pb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:clipToPadding="false"
+        android:elevation="8dp"
+        android:visibility="gone"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ProgressBar
+            android:id="@+id/progressbar_fragmentflatdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="@dimen/app_margin" />
+
+    </FrameLayout>
+
+    <include
+        android:id="@+id/ll_flatdetails_main_content"
+        android:visibility="visible"
+        layout="@layout/content_scrolling_activity_flatdetails" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/app_margin"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/button_flats_call"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="@dimen/app_margin"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_call_24dp"
+            android:transitionName="@string/fab_back_transition"
+            app:backgroundTint="@color/white"
+            app:elevation="4dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/button_flats_dislike"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/app_margin"
+            android:layout_weight="1"
+            android:src="@drawable/ic_cross"
+            android:transitionName="@string/fab_dislike_transition"
+            app:backgroundTint="@color/white"
+            app:elevation="4dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/button_flats_addtofavs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/app_margin"
+            android:src="@drawable/ic_fav"
+            android:transitionName="@string/fab_like_transition"
+            app:backgroundTint="@color/white"
+            app:elevation="4dp" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_flatzoomed_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_close"
+        app:backgroundTint="@android:color/white"
+        app:borderWidth="0dp"
+        app:fabSize="normal"
+        app:layout_anchor="@id/appbar_flatzoomed"
+        app:layout_anchorGravity="bottom|right|end" />
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/app_margin_medium"
+    android:layout_marginTop="@dimen/app_margin_medium"
+    android:background="@drawable/all_background_rectange"
+    android:elevation="1dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switch_roomfacilities_fridge"
+        style="@style/TextStyle.Settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/app_margin"
+        android:text="@string/fridge"
+        android:textColor="@color/greySettingsTitle" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switch_roomfacilities_dishwasher"
+        style="@style/TextStyle.Settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/app_margin"
+        android:text="@string/dishwasher"
+        android:textColor="@color/greySettingsTitle" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switch_roomfacilities_air_conditioning"
+        style="@style/TextStyle.Settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/app_margin"
+        android:text="@string/air_conditioning"
+        android:textColor="@color/greySettingsTitle" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switch_roomfacilities_washer"
+        style="@style/TextStyle.Settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/app_margin"
+        android:text="@string/washer"
+        android:textColor="@color/greySettingsTitle" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switch_roomfacilities_furniture"
+        style="@style/TextStyle.Settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/app_margin"
+        android:text="@string/furniture"
+        android:textColor="@color/greySettingsTitle" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switch_roomfacilities_with_pets"
+        style="@style/TextStyle.Settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/app_margin"
+        android:text="@string/with_pets"
+        android:textColor="@color/greySettingsTitle" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/switch_roomfacilities_with_kids"
+        style="@style/TextStyle.Settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/app_margin"
+        android:text="@string/with_kids"
+        android:textColor="@color/greySettingsTitle" />
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <ImageView
+            android:id="@+id/imageview_item_sharedoffer_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+
+        <com.lounah.yarealty.presentation.views.pageindicator.LinePageIndicator
+            android:id="@+id/tabindicator_item_sharedoffer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_item_realty_tablayout"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:foreground="@drawable/all_background_gradient"
+            android:transitionName="@string/page_indicator_transition"
+            app:gapWidth="@dimen/app_margin_medium"
+            app:selectedColor="@color/white"
+            app:strokeWidth="3dp"
+            app:unselectedColor="@color/greySemiTransparent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <View
+                android:id="@+id/item_sharedoffer_view_tapHandler_left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <View
+                android:id="@+id/item_sharedoffer_view_tapHandler_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textview_item_sharedoffer_price"
+            style="@style/TextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="@dimen/standard_margin_start_end_bottom_item_fav"
+            android:layout_marginStart="@dimen/standard_margin_start_end_bottom_item_fav"
+            android:layout_marginTop="@dimen/standard_margin_start_end_bottom_item_fav"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize_item_fav_price"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview_item_sharedoffer_description"
+            style="@style/TextStyle.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/textview_item_sharedoffer_price"
+            android:layout_marginEnd="@dimen/standard_margin_start_end_bottom_item_fav"
+            android:layout_marginStart="@dimen/standard_margin_start_end_bottom_item_fav"
+            android:layout_marginTop="@dimen/standard_margin_top_item_fav"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize_item_fav_description" />
+
+        <TextView
+            android:id="@+id/textview_item_sharedoffer_location"
+            style="@style/TextStyle.Small.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/textview_item_sharedoffer_description"
+            android:layout_marginEnd="@dimen/standard_margin_start_end_bottom_item_fav"
+            android:layout_marginStart="@dimen/standard_margin_start_end_bottom_item_fav"
+            android:layout_marginTop="@dimen/standard_margin_top_item_fav"
+            android:layout_marginBottom="@dimen/app_margin"
+            android:ellipsize="marquee"
+            android:maxLines="2"
+            android:textColor="@color/hint_color"
+            android:textSize="@dimen/textsize_item_fav_description" />
+
+        <ImageView
+            android:id="@+id/imageview_item_sharedoffer_dislike"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/app_margin"
+            android:src="@drawable/ic_dislike_bucket"
+            android:layout_toStartOf="@id/imageview_item_sharedoffer_like"/>
+
+        <ImageView
+            android:id="@+id/imageview_item_sharedoffer_like"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/app_margin"
+            android:src="@drawable/ic_star"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/fab_item_sharedoffer_makeCall"
+        style="@style/MaterialButton"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginBottom="@dimen/app_margin_medium"
+        android:layout_marginEnd="@dimen/app_margin"
+        android:layout_marginStart="@dimen/app_margin"
+        android:layout_marginTop="@dimen/app_margin_medium"
+        android:background="@drawable/shape_favitem_button"
+        android:elevation="0dp"
+        android:text="@string/call"
+        android:textAllCaps="false"
+        android:textStyle="normal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/greyLight"
+        android:elevation="2dp" />
+
+</LinearLayout>

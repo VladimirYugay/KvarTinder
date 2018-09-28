@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_filters_buildingstype"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="@drawable/all_background_rectange"
+    android:elevation="1dp">
+
+    <info.hoang8f.android.segmented.SegmentedGroup xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rg_searchfilters_flattypes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        segmentedgroup:sc_border_width="0dp"
+        segmentedgroup:sc_checked_text_color="@color/white"
+        segmentedgroup:sc_corner_radius="@dimen/card_corner"
+        segmentedgroup:sc_tint_color="@color/red">
+
+        <RadioButton
+            android:id="@+id/btn_all"
+            style="@style/RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/all" />
+
+        <RadioButton
+            android:id="@+id/btn_new_building"
+            style="@style/RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/new_building" />
+
+        <RadioButton
+            android:id="@+id/btn_secondary"
+            style="@style/RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/secondary" />
+
+    </info.hoang8f.android.segmented.SegmentedGroup>
+
+</FrameLayout>

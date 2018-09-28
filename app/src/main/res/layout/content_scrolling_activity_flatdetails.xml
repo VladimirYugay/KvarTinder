@@ -1,0 +1,107 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="88dp"
+        android:background="@color/flatdetailsBackgroundColor"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/app_margin"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/textview_flatzoomed_price"
+                style="@style/TextStyle.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/app_margin"
+                android:layout_marginTop="@dimen/app_margin"
+                android:layout_weight="1"
+                android:text="@string/stub_price"
+                android:textStyle="bold"
+                android:transitionName="@string/price_transition" />
+
+            <TextView
+                android:id="@+id/textview_flatzoomed_businessinfo"
+                style="@style/TextStyle.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/app_margin_medium"
+                android:layout_marginStart="@dimen/app_margin"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/stub_business_info"
+                android:textAlignment="viewStart"
+                android:textColor="@color/grey"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/textview_flatzoomed_adress"
+                style="@style/TextStyle.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/app_margin"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/stub_address"
+                android:textAlignment="viewStart"
+                android:textColor="@color/grey"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_parameters_zoomedflat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/app_margin_medium"
+            android:layout_marginTop="@dimen/app_margin_medium"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/app_margin"
+            android:paddingEnd="@dimen/app_margin"
+            android:paddingStart="@dimen/app_margin" />
+
+        <TextView
+            android:id="@+id/textview_flatzoomed_description"
+            style="@style/TextStyle.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/app_margin"
+            android:text="@string/stub_description" />
+
+        <com.yandex.mapkit.mapview.MapView
+            android:id="@+id/mapview_flatdetails"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="@dimen/app_margin_medium"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/textview_zoomedflat_report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/app_margin_medium"
+            android:layout_marginTop="@dimen/app_margin_medium"
+            android:background="@color/white"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="@dimen/app_margin"
+            android:text="@string/report"
+            android:textColor="@color/red"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

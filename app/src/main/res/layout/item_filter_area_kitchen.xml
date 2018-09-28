@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/app_margin_medium"
+    android:layout_marginTop="@dimen/app_margin_medium"
+    android:background="@drawable/all_background_rectange"
+    android:elevation="1dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearlayout_filter_areakitchen_total_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/all_background_rectange"
+        android:foreground="?selectableItemBackground"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/textview_filter_areakitchen_total_area"
+            style="@style/TextStyle.Settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/app_margin"
+            android:layout_weight="1"
+            android:text="@string/total_area"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview_filter_areakitchen_total_area_spec"
+            style="@style/TextStyle.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/app_margin"
+            android:text="@string/unimportantly"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/grey" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_filter_areakitchen_kitchen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/all_background_rectange"
+        android:foreground="?selectableItemBackground"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/textview_filter_areakitchen_kitchen"
+            style="@style/TextStyle.Settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/app_margin"
+            android:layout_weight="1"
+            android:text="@string/kitchen"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview_filter_areakitchen_kitchen_spec"
+            style="@style/TextStyle.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/app_margin"
+            android:text="@string/unimportantly"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/grey" />
+
+    </LinearLayout>
+
+</LinearLayout>

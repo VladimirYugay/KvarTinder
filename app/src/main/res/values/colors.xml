@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Base-->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey">#757575</color>
+    <color name="greyDark">#424242</color>
+    <color name="greyLight">#c4cdd1</color>
+    <color name="red">#ff5356</color>
+    <color name="redDark">#c22f32</color>
+    <color name="redLight">#ff6b6d</color>
+    <color name="yellow">#ffbb00</color>
+    <color name="yellowSemiTransparent">#52ffbb00</color>
+    <color name="blue">#00adff</color>
+    <color name="greySettingsTitle">#4e4e4e</color>
+    <color name="greySettingsItem">#585858</color>
+    <color name="greySemiTransparent">#3a757575</color>
+    <color name="greyIcon">#909090</color>
+
+    <!--App-->
+    <color name="colorPrimary">@color/white</color>
+    <color name="colorPrimaryDark">@color/black</color>
+    <color name="colorAccent">@color/red</color>
+    <color name="gradientStart">#03030303</color>
+    <color name="gradientEnd">#03000000</color>
+    <color name="gradientDarkStart">#a0000000</color>
+    <color name="gradientLightStart">#b5ffffff</color>
+    <color name="gradientDarkEnd">#00030303</color>
+    <color name="gradientLightEnd">#00ffffff</color>
+    <color name="baseBackgroundColor">#81f9f8f8</color>
+    <color name="flatdetailsBackgroundColor">#f6f5f3</color>
+
+    <!--Item realty-->
+    <color name="tab_background_selected">@color/white</color>
+    <color name="tab_background_unselected">@color/grey</color>
+
+    <!--Item fav-->
+    <color name="hint_color">#808080</color>
+    <color name="shareIconColor">@color/grey</color>
+</resources>

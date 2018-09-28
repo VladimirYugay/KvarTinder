@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/information_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/baseBackgroundColor"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/information_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/linearlayout_filters_mainfilters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/app_margin"
+                android:background="@drawable/all_background_rectange"
+                android:elevation="1dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_filters_selectors"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="@dimen/app_margin"
+                        android:layout_weight="1"
+                        android:background="@drawable/all_background_rectange">
+
+                        <Spinner
+                            android:id="@+id/spinner_filters_buyrent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:entries="@array/stringarr_searchfilters_buyrent"
+                            android:paddingStart="@dimen/app_margin_medium" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="@dimen/app_margin"
+                        android:layout_weight="1"
+                        android:background="@drawable/all_background_rectange">
+
+                        <Spinner
+                            android:id="@+id/spinner_filters_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:entries="@array/stringarr_searchfilters_type"
+                            android:paddingStart="@dimen/app_margin_medium" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_filter_main_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="@drawable/all_background_rectange"
+                    android:foreground="?selectableItemBackground"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/textview_filter_main_price"
+                        style="@style/TextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:paddingStart="@dimen/app_margin"
+                        android:paddingTop="@dimen/app_margin_medium"
+                        android:text="@string/price"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/greySettingsItem" />
+
+                    <TextView
+                        android:id="@+id/textview_filter_main_price_spec"
+                        style="@style/TextStyle.Small"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="@dimen/app_margin"
+                        android:text="@string/unimportantly"
+                        android:gravity="center"
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/grey" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textview_filter_main_city"
+                    style="@style/TextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="@drawable/all_background_rectange"
+                    android:gravity="center"
+                    android:padding="@dimen/app_margin"
+                    android:text="@string/stub_city"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/blue" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switch_search_near"
+                    style="@style/TextStyle.Settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/app_margin"
+                    android:text="@string/search_near"
+                    android:textColor="@color/greySettingsTitle" />
+
+            </LinearLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/recyclerview_fitlers_params"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/app_margin"
+        android:paddingStart="@dimen/app_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:listitem="@layout/item_filter_agency_commission" />
+
+</android.support.design.widget.CoordinatorLayout>
