@@ -14,3 +14,7 @@
   - Room
   - Kotlin Coroutines
   - Retrofit
+  - DelegateAdapter
+  - Hamcrest
+  - Mockito
+  - Tinder Cards
