@@ -1,4 +1,6 @@
-# YaRealty is a graduate project from AS of Yandex 2018. This app utilizes Yandex API for YandexRealty (search for realty in Russia) using new design similar to Tinder. 
+# Kvartinder
+
+## Kvartinder is a graduate project from ADS of Yandex 2018. This app utilizes Yandex API for YandexRealty (search for realty in Russia) using new design similar to Tinder. 
 
 ### Details:
   - Kotlin
